@@ -1,8 +1,11 @@
 [gd_scene format=3 uid="uid://ccvb7dx1mk4as"]
 
+[ext_resource type="Script" uid="uid://dixtf3j26857d" path="res://scripts/hud.gd" id="1_o5qli"]
+
 [node name="Main" type="Node2D" unique_id=1471808086]
 
 [node name="HUD" type="CanvasLayer" parent="." unique_id=1070928562]
+script = ExtResource("1_o5qli")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="HUD" unique_id=409121533]
 offset_right = 40.0
