@@ -27,5 +27,16 @@ text = "Час: 00:00"
 [node name="SpeedButtons" type="HBoxContainer" parent="HUD/VBoxContainer" unique_id=1679287845]
 layout_mode = 2
 
+[node name="PriceLabel" type="Label" parent="HUD/VBoxContainer" unique_id=1895955891]
+layout_mode = 2
+
+[node name="SellButton" type="Button" parent="HUD/VBoxContainer" unique_id=729452745]
+layout_mode = 2
+text = "Продати енергію"
+
+[node name="BuyPanelButton" type="Button" parent="HUD/VBoxContainer" unique_id=1038776225]
+layout_mode = 2
+text = "Купіть панель (5000 грн)"
+
 [node name="SolarPanel" type="Node" parent="." unique_id=1834378674]
 script = ExtResource("2_0wfyh")

@@ -19,6 +19,7 @@ config/icon="res://icon.svg"
 
 GameClock="*uid://bmpjsnbvujnjo"
 Economy="*uid://bx32c00iso7gy"
+Market="*uid://0fxrhjmi5bi3"
 
 [display]
 

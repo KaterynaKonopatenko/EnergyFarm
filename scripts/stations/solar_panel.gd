@@ -13,7 +13,7 @@ func _process(delta: float) -> void:
 	var hour_of_day := fmod(GameClock.game_hours, 24.0)
 	var g := get_irradiance(hour_of_day)
 	var power_kw := PEAK_KW * (g / 1000.0) * PERFORMANCE_RATIO
-	Economy.energy_kwh += power_kw * hour
+	Economy.energy_kwh += power_kw * hour * Economy.solar_panels
 	
 func get_irradiance(hour: float) -> float:
 	if hour < SUNRISE or hour > SUNSET:
