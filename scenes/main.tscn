@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://ccvb7dx1mk4as"]
 
 [ext_resource type="Script" uid="uid://dixtf3j26857d" path="res://scripts/hud.gd" id="1_o5qli"]
+[ext_resource type="Script" uid="uid://cupxnbo8ob4rk" path="res://scripts/stations/solar_panel.gd" id="2_0wfyh"]
 
 [node name="Main" type="Node2D" unique_id=1471808086]
 
@@ -22,3 +23,9 @@ text = "Гроші: 0 грн"
 [node name="ClockLabel" type="Label" parent="HUD/VBoxContainer" unique_id=626155523]
 layout_mode = 2
 text = "Час: 00:00"
+
+[node name="SpeedButtons" type="HBoxContainer" parent="HUD/VBoxContainer" unique_id=1679287845]
+layout_mode = 2
+
+[node name="SolarPanel" type="Node" parent="." unique_id=1834378674]
+script = ExtResource("2_0wfyh")
